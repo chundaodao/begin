@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.outer {
+	width: 900px;
+	margin: 0 auto;
+}
+.nav {
+	list-style-type: none;
+}
+.nav li {
+	float: left;
+	width: 140px;
+	height: 40px;
+	background-color: green;
+	text-align: center;
+	margin-right: 2px;
+	line-height: 40px;
+}
+.nav a {
+	text-decoration: none;
+	color: white;
+}
+.nav a:hover {
+	text-decoration: underline;
+}
+.btn input {
+	width: 22px;
+	height: 22px;
+	margin: 20px 10px 20px 0;
+	/*background-color: green;*/
+	border: none;
+}
+#red {
+	background-color: red;
+}
+#black {
+	background-color: black;
+}
+#green {
+	background-color: green;
+}
+#green {
+	background: url(../img/green.jpg) no-repeat;
+}

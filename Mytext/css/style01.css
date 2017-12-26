@@ -1,0 +1,13 @@
+.box_out {
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+/*我们*/
+#changeBox {
+	margin: 10px auto;
+	width: 100px;
+	height: 100px;
+	background-color: #bfa;
+}
