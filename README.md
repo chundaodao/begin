@@ -3,4 +3,4 @@
  [demo](https://chundaodao.github.io/begin/Mytext/01.html) 
  
  创建一个可进行拖拽的盒子
-[demo](https://github.com/chundaodao/begin/blob/master/Mytext/index.html)
+[demo](https://chundaodao.github.io/begin/Mytext/index.html)
