@@ -103,19 +103,19 @@ window.onload = function() {
 				container.removeChild(div);
 				mainBox.style.cssText = "opacity: 1; z-index: 2;";
 				container.removeChild(ul);
-				location.reload();
+			//	location.reload();
 			};
 			big_face.addEventListener("webkitTransitionEnd",function() {
 				container.removeChild(div);
 				mainBox.style.cssText = "opacity: 1; z-index: 2;";
 				container.removeChild(ul);
-				location.reload();
+			//	location.reload();
 			});
 			big_face.addEventListener("mozTransitionEnd",function() {
 				container.removeChild(div);
 				mainBox.style.cssText = "opacity: 1; z-index: 2;";
 				container.removeChild(ul);
-				location.reload();
+			//	location.reload();
 			});
 		}
 	}
