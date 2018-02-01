@@ -234,9 +234,30 @@ window.onload = function() {
     		}	
     	}
     }
+    //图片预加载
     
-    
-	
+}
+addLoadEvent(preload);
+
+function preload() {
+	var img = new Image(),
+	arr = ["img/big_1.jpg","img/big_2.jpg","img/big_3.jpg","img/big_4.jpg","img/big_5.jpg","img/big_6.jpg","img/big_7.jpg","img/big_8.jpg","img/big_9.jpg","img/big_10.jpg","img/big_11.jpg","img/big_12.jpg","img/glass_1.png","img/glass_2.png","img/glass_3.png","img/glass_4.png","img/glass_5.png","img/glass_6.png","img/glass_7.png","img/glass_8.png","img/glass_9.png","img/glass_10.png","img/glass_11.png","img/glass_12.png"];
+	for (var i = 0; i<arr.length; i++) {
+		img.src = arr[i];
+	}
 }
 
+
+
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != "function" ) {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			oldonload();
+			func();
+		}
+	}
+}
 
