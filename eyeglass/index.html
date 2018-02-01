@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>my eyeglass DRY</title>
+		<link rel="stylesheet" type="text/css" href="css/eyeglass.css" />
+	</head>
+
+	<body>
+		<!--先编制整体网页标签框架结构-->
+		<section class="container">
+			<aside>
+				<div class="text">
+					<p>请选择模特后试戴眼镜</p>
+				</div>
+				<div class="glassList">
+					<ul>
+						<li><img src="img/glass_1.jpg">
+							<h5>佐腾樱花_ZTYH-001</h5>豹纹色</li>
+						<li><img src="img/glass_2.jpg">
+							<h5>佐腾樱花_ZTYH-010</h5>蓝色</li>
+						<li><img src="img/glass_3.jpg">
+							<h5>毕加索_55-2062 C6</h5>绅士黑</li>
+						<li><img src="img/glass_4.jpg">
+							<h5>毕加索_55-2001 C6</h5>绅士黑</li>
+						<li><img src="img/glass_5.jpg">
+							<h5>毕加索_55-2068 C11</h5>荧光红</li>
+						<li><img src="img/glass_6.jpg">
+							<h5>毕加索_55-2051 C11</h5>荧光红</li>
+						<li><img src="img/glass_7.jpg">
+							<h5>沙漠之鹰_R5152 C16</h5>绅士黑</li>
+						<li><img src="img/glass_8.jpg">
+							<h5>沙漠之鹰_R5152 CCG</h5>绅士银</li>
+						<li><img src="img/glass_9.jpg">
+							<h5>沙漠之鹰_R5137 C16</h5>绅士黑</li>
+						<li><img src="img/glass_10.jpg">
+							<h5>蝙蝠侠_BM95002 C9D</h5>绅士黑</li>
+						<li><img src="img/glass_11.jpg">
+							<h5>蝙蝠侠_BM97004 B6</h5>绅士银</li>
+						<li><img src="img/glass_12.jpg">
+							<h5>蝙蝠侠_BM97004 B1</h5>透明黑</li>
+					</ul>
+				</div><!--glassLiss-->
+			</aside>
+			<div class="mainBox">
+				<div class="tab-head">
+					<ul>
+						<li class="active">模特试镜</li>
+						<li>我的相片</li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div class="tab-pane active">
+						<nav>
+							<ul class="face-select">
+								<li class="active" data-type ="*">全部</li>
+								<li data-type = "0,4">椭圆脸</li>
+								<li data-type = "2,3,8">圆形脸</li>
+								<li data-type = "4,7">长形脸</li>
+								<li data-type = "5,4,7">方形脸</li>
+								<li data-type = "2,9">瓜子脸</li>
+								<li data-type = "10,12">心形脸</li>
+							</ul>
+						</nav>
+						<div class="picture">
+							<img src="img/model_1.jpg" disabled="disabled" />
+							<img src="img/model_2.jpg" />
+							<img src="img/model_3.jpg" />
+							<img src="img/model_4.jpg" />
+							<img src="img/model_5.jpg" />
+							<img src="img/model_6.jpg" />
+							<img src="img/model_7.jpg" />
+							<img src="img/model_8.jpg" />
+							<img src="img/model_9.jpg" />
+							<img src="img/model_10.jpg" />
+							<img src="img/model_11.jpg" />
+							<img src="img/model_12.jpg" />
+						</div>
+					</div>
+					<div class="tab-pane">
+						<input type="file" id="viewPicture" />
+						<button class="ms">缩小</button>
+						<button class="ml">放大</button>
+						<button class="reset">重置大小</button>
+						
+						<div style="position: relative;">
+							<img class="placeholder" src="" width="428"/>
+						</div>
+					</div>
+				</div><!--tab-content-->
+			</div><!--mainBox-->
+		</section>
+		<script type="text/javascript" src="js/eyeglass.js"></script>
+	</body>
+</html>
